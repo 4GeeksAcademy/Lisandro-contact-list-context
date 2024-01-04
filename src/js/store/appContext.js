@@ -11,6 +11,7 @@ const injectContext = PassedComponent => {
 		//this will be passed as the contenxt value
 		const [state, setState] = useState(
 			getState({
+				//todo esto ya lo predefinio la academia, pero es JS mas avanzado, no lo vemos.
 				getStore: () => state.store,
 				getActions: () => state.actions,
 				setStore: updatedStore =>

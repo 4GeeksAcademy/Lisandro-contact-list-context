@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const AddContact = () => {
+	//declaramos los estados del formulario => 4 estados
 	return (
 		<div className="container">
 			<div>
 				<h1 className="text-center mt-5">Add a new contact</h1>
+				{/* especificar el submit */}
 				<form>
 					<div className="form-group">
 						<label>Full Name</label>
+						{/* especificar el evento onchange en cada uno de los input. */}
 						<input type="text" className="form-control" placeholder="Full Name" />
 					</div>
 					<div className="form-group">
